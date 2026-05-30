@@ -1,0 +1,78 @@
+{
+  "members": [
+    {
+      "id": "mira-shah",
+      "name": "Mira Shah",
+      "neighborhood": "Green Park",
+      "distance": 1.2,
+      "availability": "Weekends",
+      "offers": ["Excel dashboards", "Resume review"],
+      "wants": ["Guitar basics"],
+      "bio": "Operations analyst who loves turning messy sheets into clean decisions.",
+      "rating": 4.9,
+      "swaps": 18,
+      "trust": ["ID checked", "3 references"],
+      "avatar": "MS"
+    },
+    {
+      "id": "arjun-mehta",
+      "name": "Arjun Mehta",
+      "neighborhood": "Lajpat Nagar",
+      "distance": 2.1,
+      "availability": "Evenings",
+      "offers": ["Guitar lessons", "Music theory"],
+      "wants": ["Basic coding"],
+      "bio": "Bedroom guitarist helping beginners play their first full song.",
+      "rating": 4.8,
+      "swaps": 13,
+      "trust": ["Community host"],
+      "avatar": "AM"
+    },
+    {
+      "id": "naina-kapoor",
+      "name": "Naina Kapoor",
+      "neighborhood": "Defence Colony",
+      "distance": 3.4,
+      "availability": "Flexible",
+      "offers": ["Basic coding", "Portfolio websites"],
+      "wants": ["Public speaking"],
+      "bio": "Frontend developer who can help you build and ship your first page.",
+      "rating": 5,
+      "swaps": 24,
+      "trust": ["Mentor verified", "Fast replies"],
+      "avatar": "NK"
+    },
+    {
+      "id": "dev-iyer",
+      "name": "Dev Iyer",
+      "neighborhood": "Hauz Khas",
+      "distance": 4,
+      "availability": "Mornings",
+      "offers": ["Public speaking", "Interview practice"],
+      "wants": ["Excel dashboards"],
+      "bio": "Toastmasters regular who helps neighbors sound confident and clear.",
+      "rating": 4.7,
+      "swaps": 9,
+      "trust": ["Workshop leader"],
+      "avatar": "DI"
+    }
+  ],
+  "requests": [
+    {
+      "id": "req-1001",
+      "name": "Priya S.",
+      "need": "Resume review",
+      "offer": "Hindi conversation practice",
+      "area": "South Delhi",
+      "status": "Open"
+    },
+    {
+      "id": "req-1002",
+      "name": "Kabir R.",
+      "need": "Basic coding",
+      "offer": "Photography basics",
+      "area": "Central Delhi",
+      "status": "Open"
+    }
+  ]
+}
