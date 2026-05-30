@@ -3,10 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SkillSwap Local Communities</title>
+    <title>SkillSwap — Trade Skills, Not Money</title>
+    <meta name="description" content="SkillSwap connects neighbors to trade skills instead of money. Find local helpers for coding, guitar, Excel, public speaking, and more." />
+    <meta name="theme-color" content="#0a0e1a" />
+    <meta property="og:title" content="SkillSwap — Trade Skills, Not Money" />
+    <meta property="og:description" content="Find a neighbor who can help, then offer something back. Community skill exchange made simple." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/community-map.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="bg-grid"></div>
+    <div class="particles" id="particles"></div>
+
     <div class="app-shell">
       <aside class="sidebar" aria-label="SkillSwap summary">
         <div class="brand-block">
@@ -41,7 +53,7 @@
       </aside>
 
       <main>
-        <section class="topbar" aria-label="Search and intro">
+        <section class="topbar" aria-label="Search and intro" data-animate>
           <div>
             <p class="eyebrow">Trade skills, not money</p>
             <h2>Find a neighbor who can help, then offer something back.</h2>
@@ -52,22 +64,22 @@
           </label>
         </section>
 
-        <section class="stats-grid" aria-label="Community highlights">
+        <section class="stats-grid" aria-label="Community highlights" data-animate>
           <article>
-            <span class="stat-value">4.8</span>
+            <span class="stat-value" id="statRating">4.8</span>
             <p>average member rating</p>
           </article>
           <article>
-            <span class="stat-value">12 min</span>
+            <span class="stat-value" id="statReply">12 min</span>
             <p>median first reply time</p>
           </article>
           <article>
-            <span class="stat-value">92%</span>
+            <span class="stat-value" id="statSwaps">92%</span>
             <p>swaps arranged within 5 km</p>
           </article>
         </section>
 
-        <section id="discover" class="section-header">
+        <section id="discover" class="section-header" data-animate>
           <div>
             <p class="eyebrow">Skill matches</p>
             <h3>Recommended neighbors</h3>
@@ -78,7 +90,7 @@
         </section>
         <section id="memberGrid" class="member-grid" aria-live="polite"></section>
 
-        <section id="requests" class="split-layout">
+        <section id="requests" class="split-layout" data-animate>
           <div>
             <div class="section-header compact">
               <div>
@@ -119,8 +131,15 @@
       </main>
     </div>
 
+    <footer class="site-footer">
+      <p>SkillSwap — Trade skills, not money. Built for communities.</p>
+    </footer>
+
+    <div class="toast-container" id="toastContainer"></div>
+
     <template id="memberTemplate">
       <article class="member-card">
+        <div class="card-glow"></div>
         <div class="member-topline">
           <div class="avatar"></div>
           <div>
@@ -129,6 +148,7 @@
           </div>
         </div>
         <p class="bio"></p>
+        <div class="trust-badges"></div>
         <div class="skill-row offers"></div>
         <div class="skill-row wants"></div>
         <div class="card-footer">

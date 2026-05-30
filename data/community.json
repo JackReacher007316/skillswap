@@ -12,7 +12,8 @@
       "rating": 4.9,
       "swaps": 18,
       "trust": ["ID checked", "3 references"],
-      "avatar": "MS"
+      "avatar": "MS",
+      "joinedDate": "2025-03-15"
     },
     {
       "id": "arjun-mehta",
@@ -26,7 +27,8 @@
       "rating": 4.8,
       "swaps": 13,
       "trust": ["Community host"],
-      "avatar": "AM"
+      "avatar": "AM",
+      "joinedDate": "2025-05-22"
     },
     {
       "id": "naina-kapoor",
@@ -40,7 +42,8 @@
       "rating": 5,
       "swaps": 24,
       "trust": ["Mentor verified", "Fast replies"],
-      "avatar": "NK"
+      "avatar": "NK",
+      "joinedDate": "2025-01-10"
     },
     {
       "id": "dev-iyer",
@@ -54,7 +57,68 @@
       "rating": 4.7,
       "swaps": 9,
       "trust": ["Workshop leader"],
-      "avatar": "DI"
+      "avatar": "DI",
+      "joinedDate": "2025-07-01"
+    },
+    {
+      "id": "fatima-khan",
+      "name": "Fatima Khan",
+      "neighborhood": "Saket",
+      "distance": 2.8,
+      "availability": "Afternoons",
+      "offers": ["Graphic design", "Canva tutorials"],
+      "wants": ["Yoga instruction"],
+      "bio": "Freelance designer who can make your social media pop in under an hour.",
+      "rating": 4.6,
+      "swaps": 11,
+      "trust": ["Portfolio verified"],
+      "avatar": "FK",
+      "joinedDate": "2025-11-20"
+    },
+    {
+      "id": "rohan-das",
+      "name": "Rohan Das",
+      "neighborhood": "Vasant Kunj",
+      "distance": 5.2,
+      "availability": "Weekends",
+      "offers": ["Photography basics", "Lightroom editing"],
+      "wants": ["Cooking lessons"],
+      "bio": "Amateur photographer with a keen eye for street and portrait shots.",
+      "rating": 4.5,
+      "swaps": 7,
+      "trust": ["Community host"],
+      "avatar": "RD",
+      "joinedDate": "2026-01-10"
+    },
+    {
+      "id": "sneha-reddy",
+      "name": "Sneha Reddy",
+      "neighborhood": "Malviya Nagar",
+      "distance": 3.0,
+      "availability": "Evenings",
+      "offers": ["Yoga instruction", "Meditation"],
+      "wants": ["Graphic design"],
+      "bio": "Certified yoga instructor offering free community sessions on weekends.",
+      "rating": 4.9,
+      "swaps": 21,
+      "trust": ["Certified instructor", "5 references"],
+      "avatar": "SR",
+      "joinedDate": "2025-09-05"
+    },
+    {
+      "id": "vikram-singh",
+      "name": "Vikram Singh",
+      "neighborhood": "Greater Kailash",
+      "distance": 3.8,
+      "availability": "Mornings",
+      "offers": ["Cooking lessons", "Meal prep planning"],
+      "wants": ["Photography basics"],
+      "bio": "Home chef who can teach you 10 healthy meals you'll actually want to eat.",
+      "rating": 4.8,
+      "swaps": 15,
+      "trust": ["Recipe verified", "Fast replies"],
+      "avatar": "VS",
+      "joinedDate": "2025-12-01"
     }
   ],
   "requests": [
@@ -64,7 +128,8 @@
       "need": "Resume review",
       "offer": "Hindi conversation practice",
       "area": "South Delhi",
-      "status": "Open"
+      "status": "Open",
+      "createdAt": "2025-06-10T09:30:00.000Z"
     },
     {
       "id": "req-1002",
@@ -72,7 +137,8 @@
       "need": "Basic coding",
       "offer": "Photography basics",
       "area": "Central Delhi",
-      "status": "Open"
+      "status": "Open",
+      "createdAt": "2025-06-12T14:15:00.000Z"
     }
   ]
 }

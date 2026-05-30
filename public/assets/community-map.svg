@@ -1,19 +1,20 @@
 <svg width="480" height="280" viewBox="0 0 480 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Neighborhood skill map</title>
-  <desc id="desc">A bright local map with connected skill pins.</desc>
-  <rect width="480" height="280" rx="16" fill="#DFF5E8"/>
-  <path d="M0 198C58 164 102 167 154 193C211 222 259 224 320 185C373 151 421 142 480 166V280H0V198Z" fill="#F6FAF5"/>
-  <path d="M34 70C86 98 138 98 190 70C242 42 294 42 346 70C398 98 437 95 480 76" stroke="#9FCBB9" stroke-width="10" stroke-linecap="round"/>
-  <path d="M76 226L168 148L264 190L386 94" stroke="#176B55" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 12"/>
-  <circle cx="76" cy="226" r="28" fill="#176B55"/>
-  <circle cx="168" cy="148" r="28" fill="#E86F52"/>
-  <circle cx="264" cy="190" r="28" fill="#5677D8"/>
-  <circle cx="386" cy="94" r="28" fill="#F3BD4F"/>
+  <desc id="desc">A dark-themed local map with connected skill pins.</desc>
+  <rect width="480" height="280" rx="16" fill="#12162b"/>
+  <path d="M0 198C58 164 102 167 154 193C211 222 259 224 320 185C373 151 421 142 480 166V280H0V198Z" fill="#0f1328"/>
+  <path d="M0 240C80 220 160 225 240 235C320 245 400 230 480 240V280H0V240Z" fill="#1a1f3d"/>
+  <path d="M34 70C86 98 138 98 190 70C242 42 294 42 346 70C398 98 437 95 480 76" stroke="#2a3a6a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M76 226L168 148L264 190L386 94" stroke="#00d4ff" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 12"/>
+  <circle cx="76" cy="226" r="28" fill="#00d4ff"/>
+  <circle cx="168" cy="148" r="28" fill="#7b2ff7"/>
+  <circle cx="264" cy="190" r="28" fill="#ff2d7c"/>
+  <circle cx="386" cy="94" r="28" fill="#fbbf24"/>
   <path d="M66 226H86M76 216V236" stroke="white" stroke-width="6" stroke-linecap="round"/>
   <path d="M157 148H179" stroke="white" stroke-width="6" stroke-linecap="round"/>
   <path d="M254 181H274V199H254V181Z" stroke="white" stroke-width="5" stroke-linejoin="round"/>
   <path d="M376 96C384 84 399 91 394 104C390 115 372 113 376 96Z" fill="white"/>
-  <circle cx="399" cy="52" r="10" fill="#176B55"/>
-  <circle cx="132" cy="58" r="8" fill="#E86F52"/>
-  <circle cx="315" cy="238" r="9" fill="#5677D8"/>
+  <circle cx="399" cy="52" r="10" fill="#00d4ff" opacity="0.6"/>
+  <circle cx="132" cy="58" r="8" fill="#ff2d7c" opacity="0.5"/>
+  <circle cx="315" cy="238" r="9" fill="#7b2ff7" opacity="0.5"/>
 </svg>
