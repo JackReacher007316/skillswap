@@ -1,0 +1,24 @@
+{
+  "name": "skillswap-local-communities",
+  "version": "1.0.0",
+  "description": "A full-stack SkillSwap MVP for neighbors to exchange small skills without money.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "skillswap",
+    "community",
+    "marketplace",
+    "node",
+    "frontend"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillSwap Local Communities</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="SkillSwap summary">
+        <div class="brand-block">
+          <div class="brand-mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </div>
+          <div>
+            <p class="eyebrow">Local exchange</p>
+            <h1>SkillSwap</h1>
+          </div>
+        </div>
+
+        <div class="neighborhood-card">
+          <img src="./assets/community-map.svg" alt="Illustrated neighborhood skill map" />
+          <div>
+            <p class="eyebrow">Active near you</p>
+            <strong id="memberCount">0 helpers</strong>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="Main sections">
+          <a href="#discover" class="active">Discover</a>
+          <a href="#requests">Open requests</a>
+          <a href="#requestForm">Post a swap</a>
+        </nav>
+
+        <div class="impact-strip">
+          <span>67</span>
+          <p>money-free swaps completed across nearby communities this month</p>
+        </div>
+      </aside>
+
+      <main>
+        <section class="topbar" aria-label="Search and intro">
+          <div>
+            <p class="eyebrow">Trade skills, not money</p>
+            <h2>Find a neighbor who can help, then offer something back.</h2>
+          </div>
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="searchInput" type="search" placeholder="Search Excel, coding, guitar..." />
+          </label>
+        </section>
+
+        <section class="stats-grid" aria-label="Community highlights">
+          <article>
+            <span class="stat-value">4.8</span>
+            <p>average member rating</p>
+          </article>
+          <article>
+            <span class="stat-value">12 min</span>
+            <p>median first reply time</p>
+          </article>
+          <article>
+            <span class="stat-value">92%</span>
+            <p>swaps arranged within 5 km</p>
+          </article>
+        </section>
+
+        <section id="discover" class="section-header">
+          <div>
+            <p class="eyebrow">Skill matches</p>
+            <h3>Recommended neighbors</h3>
+          </div>
+          <button id="clearSearch" class="icon-button" type="button" title="Clear search" aria-label="Clear search">
+            ×
+          </button>
+        </section>
+        <section id="memberGrid" class="member-grid" aria-live="polite"></section>
+
+        <section id="requests" class="split-layout">
+          <div>
+            <div class="section-header compact">
+              <div>
+                <p class="eyebrow">Live board</p>
+                <h3>Open requests</h3>
+              </div>
+            </div>
+            <div id="requestList" class="request-list" aria-live="polite"></div>
+          </div>
+
+          <form id="requestForm" class="swap-form">
+            <div class="section-header compact">
+              <div>
+                <p class="eyebrow">New swap</p>
+                <h3>Ask the community</h3>
+              </div>
+            </div>
+            <label>
+              Your name
+              <input name="name" maxlength="80" required placeholder="Aarya S." />
+            </label>
+            <label>
+              I need help with
+              <input name="need" maxlength="80" required placeholder="Resume review" />
+            </label>
+            <label>
+              I can offer
+              <input name="offer" maxlength="80" required placeholder="Excel formulas" />
+            </label>
+            <label>
+              Area
+              <input name="area" maxlength="80" required placeholder="Green Park" />
+            </label>
+            <button type="submit">Post request</button>
+            <p id="formMessage" role="status"></p>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <template id="memberTemplate">
+      <article class="member-card">
+        <div class="member-topline">
+          <div class="avatar"></div>
+          <div>
+            <h4></h4>
+            <p class="member-meta"></p>
+          </div>
+        </div>
+        <p class="bio"></p>
+        <div class="skill-row offers"></div>
+        <div class="skill-row wants"></div>
+        <div class="card-footer">
+          <span class="rating"></span>
+          <button type="button">Request swap</button>
+        </div>
+      </article>
+    </template>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
